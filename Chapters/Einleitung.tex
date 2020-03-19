@@ -1,14 +1,35 @@
 \chapter{Einleitung}
 \label{ch:Einleitung}
-
+Seit Jahrzehnten versuchen die Menschen ihre maschinellen Systeme immer effizienter und sicherer zu gestalten. Durch das Aufkommen von Computern besteht seitdem die Möglichkeit diese Systeme digital und nutzerfreundlich zu überwachen. So nehmen sie sensorische Werte der Anlage auf und verarbeiten diese. Es können so beispielsweise Abschätzungen mittels linearer Regression über die Lebensdauer einer solchen Anlage erfasst und diese dann in einem Diagramm dargestellt werden. Solche Systeme sind und werden in Zukunft noch viel wichtiger werden, da hier statistische Methoden eingesetzt werden können, die für den modernen Fertigungs- und Wartungsprozess unerlässlich sind.
 
 \section{Problemstellung}
-Die Firma HYDAC Systems und Services GmbH entwickelt derzeit ein System zum erfassen, verarbeiten und auswerten von Messwerten und Prozessdaten in Echtzeit. Allgemein ist solch ein System auch unter dem Begriff Condition Monitoring bekannt und ermöglicht es Prozesse zu überwachen, zu planen und gegebenenfalls zu optimieren. Es wird demnach zur Prozessoptimierung verwendet und erhöht die Verfügbarkeit von Anlagen. Im Rahmen der Machbarkeit und Untersuchung unterschiedlicher Herangehensweisen, ist es für die Firma interessant wie Studenten der Hochschule htwsaar ein Condition Monitoring System anhand gegebener Anforderungen konzipieren würden.
+Die Firma HYDAC Systems und Services GmbH entwickelt derzeit ein System zum erfassen, verarbeiten und auswerten von Messwerten und Prozessdaten in Echtzeit. Allgemein ist solch ein System auch unter dem Begriff Condition Monitoring bekannt und ermöglicht es Prozesse zu überwachen, zu planen und gegebenenfalls zu optimieren. Es wird demnach zur Prozessoptimierung verwendet und erhöht die Verfügbarkeit von Anlagen. Im Rahmen der Machbarkeit und Untersuchung unterschiedlicher Herangehensweisen, ist es für die Firma interessant wie Studenten der Hochschule htwsaar ein Condition Monitoring System anhand gegebener Anforderungen konzipieren würden. Folgende Anforderungen verdeutlichen die zentrale fachliche Aufgabenstellung:
+\begin{itemize}
+	\item Vordefinierte Datensätze sind aus einer Datenquelle gefiltert oder ungefiltert zu empfangen und in einer Datenbank persistent abzuspeichern. Dabei kann diese Datenquelle verschiedene Protokolle sein, wie HFI-MM, HFI-CM, Modbus TCP/RTU, CAN/CANopen, S7 protocol, OPC-UA (client and server), HTTP und WebSocket
+	\item Das System benötigt eine Benutzerverwaltung um Nutzern und Gruppen Zugriffsrechte auf dem System zu ermöglichen. Die Zugriffsrechte sind lesend, schreibend und administrativ.  Solange man administrative Rechte hat kann man die Rechte anderen Nutzern und Gruppen verteilen.
+	\item Es wird ein Web-Interface benötigt um auf die einzelnen Komponenten zugreifen zu können. So soll es ein Dashboard geben, das individuell angepasst werden kann und beispielsweise Prozesse anzeigt.
+\end{itemize}
 
 \section{Zielsetzung}
-Das Ziel dieser Arbeit soll es sein, einen Architekturentwurf für ein Condtion Monitoring auszuarbeiten, welcher unter Anwendung moderner Architekturansätze zu gestalten ist. Wichtig ist es auch, das die Vorgaben der Firma mit in das Konzept fließen.
+Das Ziel dieser Arbeit soll es sein, einen Architekturentwurf für ein Condtion Monitoring auszuarbeiten, welcher unter Anwendung moderner Architekturansätze zu gestalten ist. Die folgenden primären Qualitätsziele sind dabei genau zu beachten:
+\begin{itemize}
+	\item Effizienz (Performance|Leistung): Das System soll ca. 500 Datensätze innerhalb einer Sekunde aus ein oder mehreren Datenquellen erfassen können.
+ 	\item Verfügbarkeit (Erreichbarkeit): Das System soll eine Hochverfügbarkeit von mindestens 99,9\% aufweisen und darf demnach maximal 8h 45min im Jahr ausfallen.
+ 	\item Nutzbarkeit (UX): Das User-Interface soll einfach zu verstehen sein und einem Bediener innerhalb einer Stunde erlernbar sein. Des weiteren soll die Oberfläche für den Benutzer individuell anpassbar sein.
+\end{itemize}
 
 \section{Stakeholder}
-
+Die Stakeholder werden durch eine Stakeholderanalyse identifiziert und bezeichnen die für das Projekt relevanten Personengruppen. 
+Hierzu ist festzuhalten, welchen Vorteil die jeweiligen Gruppen haben und welche individuellen Erwartungen an das System gestellt werden. Durch eine Marktanalyse in Betrachtung des Einsatzumfelds und anhand der Einsatzmöglichkeiten haben sich uns folgende Personengruppen als Stakeholder an das System herausgestellt:
+\begin{itemize}
+	\item Fach- und Führungskräfte
+	\item Anwendungs- und Testentwickler
+	\item Linien- und Produktionskräfte
+	\item Systemadministratoren
+\end{itemize}
+Die Fach- und Führungskräfte sind insbesondere an einer zielführenden Übersicht und einer Aggregation von planbaren Artefakten interessiert, welches ihnen wiederum bei der Unterstützung und Planung des Arbeitsprozesses hilft.   
+Die Anwendungs- und Testentwickler erwarten einen niedrigen Integrationsaufwand bei Implementierung neuer Funktionalitäten. 
+Die Linien- und Produktionskräfte erwarten eine einfache Ansicht der Zustandserfassung, sodass sie das System einfach überwachen können.
+Die Systemadministratoren erwarten, dass das System eine sofortige Informationsmitteilung und eine einfache Maßnahmenkontrolle bereitstellt, damit einerseits die Systeme auf Fehler überwacht und reagiert werden können.
 \section{Gliederung}
-Das erste Kapitel gibt einen Überblick über die Themen, welche folgend in der Dokumentation ausformuliert sind. Im Kapitel \ref{ch:Anforderungsanalyse}, werden sowohl die funktionalen, als auch die nicht-funktionalen definiert und erörtert. Es schafft Klarheit darüber wer, warum und wozu solch ein System benötigt wird und definiert die zentralen Merkmale. Das \ref{ch:Konzept} befasst sich danach mit den aus Kapitel \ref{ch:Anforderungsanalyse} gestellten Anforderungen und beschreibt ein mögliches Konzept nach Kriterien. Kapitel Im letzten Kapitel \ref{ch:Fazit} werden wir das Vorgehen abschließend beurteilen und einen Ausblick wagen.
+Das erste Kapitel gibt einen Überblick über die Themen, welche folgend in der Dokumentation ausformuliert sind. Es schafft Klarheit darüber wer, warum und wozu solch ein System benötigt wird und definiert die zentralen Merkmale.  Im Kapitel \ref{ch:Einflussfaktoren}, wird dann auf Randbedingungen eingegangen, die nicht direkt in den Anforderungen beschreiben sind, welche aber trotzdem bei einer Entwicklung beachtet werden sollen. Das \ref{ch:Konzept} befasst sich danach mit den gestellten Anforderungen und beschreibt ein mögliches Konzept nach Kriterien. Kapitel Im letzten Kapitel \ref{ch:Fazit} werden wir das Vorgehen abschließend beurteilen und einen Ausblick wagen.
