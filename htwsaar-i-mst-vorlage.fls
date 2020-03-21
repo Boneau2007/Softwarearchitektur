@@ -346,6 +346,30 @@ INPUT C:\Users\Richard Mai\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\ma
 INPUT C:\Users\Richard Mai\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\mathpazo.sty
 INPUT c:\Users\Richard Mai\Desktop\SWA\Softwarearchitektur\htwsaar-i-mst-vorlage.aux
 INPUT c:\Users\Richard Mai\Desktop\SWA\Softwarearchitektur\htwsaar-i-mst-vorlage.aux
+INPUT c:\Users\Richard Mai\Desktop\SWA\Softwarearchitektur\FrontBackmatter\Titlepage.aux
+INPUT c:\Users\Richard Mai\Desktop\SWA\Softwarearchitektur\FrontBackmatter\Titlepage.aux
+INPUT c:\Users\Richard Mai\Desktop\SWA\Softwarearchitektur\FrontBackmatter\Contents.aux
+INPUT c:\Users\Richard Mai\Desktop\SWA\Softwarearchitektur\FrontBackmatter\Contents.aux
+INPUT c:\Users\Richard Mai\Desktop\SWA\Softwarearchitektur\Chapters\Einleitung.aux
+INPUT c:\Users\Richard Mai\Desktop\SWA\Softwarearchitektur\Chapters\Einleitung.aux
+INPUT c:\Users\Richard Mai\Desktop\SWA\Softwarearchitektur\Chapters\Einflussfaktoren.aux
+INPUT c:\Users\Richard Mai\Desktop\SWA\Softwarearchitektur\Chapters\Einflussfaktoren.aux
+INPUT c:\Users\Richard Mai\Desktop\SWA\Softwarearchitektur\Chapters\Kontextabgrenzung.aux
+INPUT c:\Users\Richard Mai\Desktop\SWA\Softwarearchitektur\Chapters\Kontextabgrenzung.aux
+INPUT c:\Users\Richard Mai\Desktop\SWA\Softwarearchitektur\Chapters\Qualitaetsszenarien.aux
+INPUT c:\Users\Richard Mai\Desktop\SWA\Softwarearchitektur\Chapters\Qualitaetsszenarien.aux
+INPUT c:\Users\Richard Mai\Desktop\SWA\Softwarearchitektur\Chapters\Konzept.aux
+INPUT c:\Users\Richard Mai\Desktop\SWA\Softwarearchitektur\Chapters\Konzept.aux
+INPUT c:\Users\Richard Mai\Desktop\SWA\Softwarearchitektur\Chapters\Fazit.aux
+INPUT c:\Users\Richard Mai\Desktop\SWA\Softwarearchitektur\Chapters\Fazit.aux
+INPUT c:\Users\Richard Mai\Desktop\SWA\Softwarearchitektur\FrontBackmatter\Bibliography.aux
+INPUT c:\Users\Richard Mai\Desktop\SWA\Softwarearchitektur\FrontBackmatter\Bibliography.aux
+INPUT c:\Users\Richard Mai\Desktop\SWA\Softwarearchitektur\FrontBackmatter\ListOfs.aux
+INPUT c:\Users\Richard Mai\Desktop\SWA\Softwarearchitektur\FrontBackmatter\ListOfs.aux
+INPUT c:\Users\Richard Mai\Desktop\SWA\Softwarearchitektur\FrontBackmatter\Abbreviations.aux
+INPUT c:\Users\Richard Mai\Desktop\SWA\Softwarearchitektur\FrontBackmatter\Abbreviations.aux
+INPUT c:\Users\Richard Mai\Desktop\SWA\Softwarearchitektur\Chapters\Anhang-A.aux
+INPUT c:\Users\Richard Mai\Desktop\SWA\Softwarearchitektur\Chapters\Anhang-A.aux
 OUTPUT c:\Users\Richard Mai\Desktop\SWA\Softwarearchitektur\htwsaar-i-mst-vorlage.aux
 INPUT C:\Users\Richard Mai\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\t1ppl.fd
 INPUT C:\Users\Richard Mai\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\t1ppl.fd
@@ -357,6 +381,9 @@ INPUT C:\Users\Richard Mai\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\
 INPUT C:\Users\Richard Mai\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\lbx\german.lbx
 INPUT C:\Users\Richard Mai\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\lbx\german.lbx
 OUTPUT c:\Users\Richard Mai\Desktop\SWA\Softwarearchitektur\htwsaar-i-mst-vorlage-blx.bib
+INPUT c:\Users\Richard Mai\Desktop\SWA\Softwarearchitektur\htwsaar-i-mst-vorlage.bbl
+INPUT c:\Users\Richard Mai\Desktop\SWA\Softwarearchitektur\htwsaar-i-mst-vorlage.bbl
+INPUT c:\Users\Richard Mai\Desktop\SWA\Softwarearchitektur\htwsaar-i-mst-vorlage.bbl
 INPUT C:\Users\Richard Mai\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Users\Richard Mai\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Users\Richard Mai\AppData\Local\Programs\MiKTeX 2.9\tex\latex\epstopdf-pkg\epstopdf-base.sty
@@ -367,6 +394,12 @@ INPUT C:\Users\Richard Mai\AppData\Local\Programs\MiKTeX 2.9\tex\latex\refcount\
 INPUT C:\Users\Richard Mai\AppData\Local\Programs\MiKTeX 2.9\tex\latex\refcount\refcount.sty
 INPUT C:\Users\Richard Mai\AppData\Local\Programs\MiKTeX 2.9\tex\generic\gettitlestring\gettitlestring.sty
 INPUT C:\Users\Richard Mai\AppData\Local\Programs\MiKTeX 2.9\tex\generic\gettitlestring\gettitlestring.sty
+INPUT c:\Users\Richard Mai\Desktop\SWA\Softwarearchitektur\htwsaar-i-mst-vorlage.out
+INPUT c:\Users\Richard Mai\Desktop\SWA\Softwarearchitektur\htwsaar-i-mst-vorlage.out
+INPUT c:\Users\Richard Mai\Desktop\SWA\Softwarearchitektur\htwsaar-i-mst-vorlage.out
+INPUT c:\Users\Richard Mai\Desktop\SWA\Softwarearchitektur\htwsaar-i-mst-vorlage.out
+INPUT c:\Users\Richard Mai\Desktop\SWA\Softwarearchitektur\htwsaar-i-mst-vorlage.out
+INPUT c:\Users\Richard Mai\Desktop\SWA\Softwarearchitektur\htwsaar-i-mst-vorlage.out
 OUTPUT c:\Users\Richard Mai\Desktop\SWA\Softwarearchitektur\htwsaar-i-mst-vorlage.out
 INPUT C:\Users\Richard Mai\AppData\Local\Programs\MiKTeX 2.9\tex\latex\bookmark\bookmark.sty
 INPUT C:\Users\Richard Mai\AppData\Local\Programs\MiKTeX 2.9\tex\latex\bookmark\bookmark.sty
@@ -394,7 +427,36 @@ INPUT c:\Users\Richard Mai\Desktop\SWA\Softwarearchitektur\FrontBackmatter\Conte
 INPUT c:\Users\Richard Mai\Desktop\SWA\Softwarearchitektur\FrontBackmatter\Contents.tex
 INPUT C:\Users\Richard Mai\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\palatino\pplb8t.tfm
 INPUT C:\Users\Richard Mai\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\palatino\pplb8t.tfm
+INPUT c:\Users\Richard Mai\Desktop\SWA\Softwarearchitektur\htwsaar-i-mst-vorlage.toc
+INPUT c:\Users\Richard Mai\Desktop\SWA\Softwarearchitektur\htwsaar-i-mst-vorlage.toc
+INPUT C:\Users\Richard Mai\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\ot1ppl.fd
+INPUT C:\Users\Richard Mai\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\ot1ppl.fd
+INPUT C:\Users\Richard Mai\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\palatino\pplr7t.tfm
+INPUT C:\Users\Richard Mai\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\palatino\pplr7t.tfm
+INPUT C:\Users\Richard Mai\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\palatino\pplr7t.tfm
+INPUT C:\Users\Richard Mai\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\omlzplm.fd
+INPUT C:\Users\Richard Mai\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\omlzplm.fd
+INPUT C:\Users\Richard Mai\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\mathpazo\zplmr7m.tfm
+INPUT C:\Users\Richard Mai\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\mathpazo\zplmr7m.tfm
+INPUT C:\Users\Richard Mai\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\mathpazo\zplmr7m.tfm
+INPUT C:\Users\Richard Mai\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\omszplm.fd
+INPUT C:\Users\Richard Mai\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\omszplm.fd
+INPUT C:\Users\Richard Mai\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\mathpazo\zplmr7y.tfm
+INPUT C:\Users\Richard Mai\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\mathpazo\zplmr7y.tfm
+INPUT C:\Users\Richard Mai\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\mathpazo\zplmr7y.tfm
+INPUT C:\Users\Richard Mai\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\omxzplm.fd
+INPUT C:\Users\Richard Mai\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\omxzplm.fd
+INPUT C:\Users\Richard Mai\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\mathpazo\zplmr7v.tfm
+INPUT C:\Users\Richard Mai\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\mathpazo\zplmr7v.tfm
+INPUT C:\Users\Richard Mai\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\mathpazo\zplmr7v.tfm
+INPUT C:\Users\Richard Mai\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\ot1zplm.fd
+INPUT C:\Users\Richard Mai\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\ot1zplm.fd
+INPUT C:\Users\Richard Mai\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\mathpazo\zplmr7t.tfm
+INPUT C:\Users\Richard Mai\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\mathpazo\zplmr7t.tfm
+INPUT C:\Users\Richard Mai\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\mathpazo\zplmr7t.tfm
 OUTPUT c:\Users\Richard Mai\Desktop\SWA\Softwarearchitektur\htwsaar-i-mst-vorlage.toc
+INPUT C:\Users\Richard Mai\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\palatino\pplb8t.vf
+INPUT C:\Users\Richard Mai\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\palatino\pplb8r.tfm
 INPUT C:\Users\Richard Mai\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\palatino\pplb8t.vf
 INPUT C:\Users\Richard Mai\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\palatino\pplb8r.tfm
 INPUT C:\Users\Richard Mai\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\palatino\pplr8t.vf
@@ -410,14 +472,25 @@ INPUT C:\Users\Richard Mai\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\ma
 INPUT C:\Users\Richard Mai\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\palatino\pplro8t.tfm
 INPUT C:\Users\Richard Mai\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\palatino\pplro8t.vf
 INPUT C:\Users\Richard Mai\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\palatino\pplro8r.tfm
-INPUT C:\Users\Richard Mai\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\palatino\pplb8t.vf
-INPUT C:\Users\Richard Mai\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\palatino\pplb8r.tfm
 OUTPUT c:\Users\Richard Mai\Desktop\SWA\Softwarearchitektur\Chapters\Einflussfaktoren.aux
 INPUT c:\Users\Richard Mai\Desktop\SWA\Softwarearchitektur\Chapters\Einflussfaktoren.tex
 INPUT c:\Users\Richard Mai\Desktop\SWA\Softwarearchitektur\Chapters\Einflussfaktoren.tex
 OUTPUT c:\Users\Richard Mai\Desktop\SWA\Softwarearchitektur\Chapters\Kontextabgrenzung.aux
 INPUT c:\Users\Richard Mai\Desktop\SWA\Softwarearchitektur\Chapters\Kontextabgrenzung.tex
 INPUT c:\Users\Richard Mai\Desktop\SWA\Softwarearchitektur\Chapters\Kontextabgrenzung.tex
+INPUT c:\Users\Richard Mai\Desktop\SWA\Softwarearchitektur\Graphics\fachliche_kontextabgrenzung.png
+INPUT c:\Users\Richard Mai\Desktop\SWA\Softwarearchitektur\Graphics\fachliche_kontextabgrenzung.png
+INPUT c:\Users\Richard Mai\Desktop\SWA\Softwarearchitektur\Graphics\fachliche_kontextabgrenzung.png
+INPUT c:\Users\Richard Mai\Desktop\SWA\Softwarearchitektur\Graphics\fachliche_kontextabgrenzung.png
+INPUT c:\Users\Richard Mai\Desktop\SWA\Softwarearchitektur\Graphics\fachliche_kontextabgrenzung.png
+INPUT C:\Users\Richard Mai\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\palatino\pplr8t.tfm
+INPUT C:\Users\Richard Mai\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\palatino\pplr8t.vf
+INPUT C:\Users\Richard Mai\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\palatino\pplr8r.tfm
+INPUT c:\Users\Richard Mai\Desktop\SWA\Softwarearchitektur\Graphics\technische_kontextabgrenzung.png
+INPUT c:\Users\Richard Mai\Desktop\SWA\Softwarearchitektur\Graphics\technische_kontextabgrenzung.png
+INPUT c:\Users\Richard Mai\Desktop\SWA\Softwarearchitektur\Graphics\technische_kontextabgrenzung.png
+INPUT c:\Users\Richard Mai\Desktop\SWA\Softwarearchitektur\Graphics\technische_kontextabgrenzung.png
+INPUT c:\Users\Richard Mai\Desktop\SWA\Softwarearchitektur\Graphics\technische_kontextabgrenzung.png
 OUTPUT c:\Users\Richard Mai\Desktop\SWA\Softwarearchitektur\Chapters\Qualitaetsszenarien.aux
 INPUT c:\Users\Richard Mai\Desktop\SWA\Softwarearchitektur\Chapters\Qualitaetsszenarien.tex
 INPUT c:\Users\Richard Mai\Desktop\SWA\Softwarearchitektur\Chapters\Qualitaetsszenarien.tex
@@ -426,7 +499,6 @@ INPUT c:\Users\Richard Mai\Desktop\SWA\Softwarearchitektur\Graphics\Verfuegbarke
 INPUT c:\Users\Richard Mai\Desktop\SWA\Softwarearchitektur\Graphics\Verfuegbarkeit.png
 INPUT c:\Users\Richard Mai\Desktop\SWA\Softwarearchitektur\Graphics\Verfuegbarkeit.png
 INPUT c:\Users\Richard Mai\Desktop\SWA\Softwarearchitektur\Graphics\Verfuegbarkeit.png
-INPUT C:\Users\Richard Mai\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\palatino\pplr8t.tfm
 INPUT c:\Users\Richard Mai\Desktop\SWA\Softwarearchitektur\Graphics\Sicherheit.png
 INPUT c:\Users\Richard Mai\Desktop\SWA\Softwarearchitektur\Graphics\Sicherheit.png
 INPUT c:\Users\Richard Mai\Desktop\SWA\Softwarearchitektur\Graphics\Sicherheit.png
@@ -442,16 +514,21 @@ INPUT c:\Users\Richard Mai\Desktop\SWA\Softwarearchitektur\Graphics\Erweiterbark
 INPUT c:\Users\Richard Mai\Desktop\SWA\Softwarearchitektur\Graphics\Erweiterbarkeit.png
 INPUT c:\Users\Richard Mai\Desktop\SWA\Softwarearchitektur\Graphics\Erweiterbarkeit.png
 INPUT c:\Users\Richard Mai\Desktop\SWA\Softwarearchitektur\Graphics\Erweiterbarkeit.png
-INPUT C:\Users\Richard Mai\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\t1cmtt.fd
-INPUT C:\Users\Richard Mai\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\t1cmtt.fd
-INPUT C:\Users\Richard Mai\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ectt1095.tfm
+INPUT c:\Users\Richard Mai\Desktop\SWA\Softwarearchitektur\Graphics\Portierbarkeit.png
+INPUT c:\Users\Richard Mai\Desktop\SWA\Softwarearchitektur\Graphics\Portierbarkeit.png
+INPUT c:\Users\Richard Mai\Desktop\SWA\Softwarearchitektur\Graphics\Portierbarkeit.png
+INPUT c:\Users\Richard Mai\Desktop\SWA\Softwarearchitektur\Graphics\Portierbarkeit.png
+INPUT c:\Users\Richard Mai\Desktop\SWA\Softwarearchitektur\Graphics\Portierbarkeit.png
 INPUT c:\Users\Richard Mai\Desktop\SWA\Softwarearchitektur\Graphics\Effizienz.png
 INPUT c:\Users\Richard Mai\Desktop\SWA\Softwarearchitektur\Graphics\Effizienz.png
 INPUT c:\Users\Richard Mai\Desktop\SWA\Softwarearchitektur\Graphics\Effizienz.png
 INPUT c:\Users\Richard Mai\Desktop\SWA\Softwarearchitektur\Graphics\Effizienz.png
 INPUT c:\Users\Richard Mai\Desktop\SWA\Softwarearchitektur\Graphics\Effizienz.png
-INPUT C:\Users\Richard Mai\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\palatino\pplr8t.vf
-INPUT C:\Users\Richard Mai\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\palatino\pplr8r.tfm
+INPUT c:\Users\Richard Mai\Desktop\SWA\Softwarearchitektur\Graphics\Hardware.png
+INPUT c:\Users\Richard Mai\Desktop\SWA\Softwarearchitektur\Graphics\Hardware.png
+INPUT c:\Users\Richard Mai\Desktop\SWA\Softwarearchitektur\Graphics\Hardware.png
+INPUT c:\Users\Richard Mai\Desktop\SWA\Softwarearchitektur\Graphics\Hardware.png
+INPUT c:\Users\Richard Mai\Desktop\SWA\Softwarearchitektur\Graphics\Hardware.png
 OUTPUT c:\Users\Richard Mai\Desktop\SWA\Softwarearchitektur\Chapters\Konzept.aux
 INPUT c:\Users\Richard Mai\Desktop\SWA\Softwarearchitektur\Chapters\Konzept.tex
 INPUT c:\Users\Richard Mai\Desktop\SWA\Softwarearchitektur\Chapters\Konzept.tex
@@ -464,8 +541,13 @@ INPUT c:\Users\Richard Mai\Desktop\SWA\Softwarearchitektur\FrontBackmatter\Bibli
 OUTPUT c:\Users\Richard Mai\Desktop\SWA\Softwarearchitektur\FrontBackmatter\ListOfs.aux
 INPUT c:\Users\Richard Mai\Desktop\SWA\Softwarearchitektur\FrontBackmatter\ListOfs.tex
 INPUT c:\Users\Richard Mai\Desktop\SWA\Softwarearchitektur\FrontBackmatter\ListOfs.tex
+INPUT c:\Users\Richard Mai\Desktop\SWA\Softwarearchitektur\htwsaar-i-mst-vorlage.lof
+INPUT c:\Users\Richard Mai\Desktop\SWA\Softwarearchitektur\htwsaar-i-mst-vorlage.lof
 OUTPUT c:\Users\Richard Mai\Desktop\SWA\Softwarearchitektur\htwsaar-i-mst-vorlage.lof
+INPUT c:\Users\Richard Mai\Desktop\SWA\Softwarearchitektur\htwsaar-i-mst-vorlage.lot
+INPUT c:\Users\Richard Mai\Desktop\SWA\Softwarearchitektur\htwsaar-i-mst-vorlage.lot
 OUTPUT c:\Users\Richard Mai\Desktop\SWA\Softwarearchitektur\htwsaar-i-mst-vorlage.lot
+INPUT c:\Users\Richard Mai\Desktop\SWA\Softwarearchitektur\htwsaar-i-mst-vorlage.lol
 INPUT c:\Users\Richard Mai\Desktop\SWA\Softwarearchitektur\htwsaar-i-mst-vorlage.lol
 OUTPUT c:\Users\Richard Mai\Desktop\SWA\Softwarearchitektur\htwsaar-i-mst-vorlage.lol
 OUTPUT c:\Users\Richard Mai\Desktop\SWA\Softwarearchitektur\FrontBackmatter\Abbreviations.aux
@@ -506,8 +588,6 @@ INPUT c:\Users\Richard Mai\Desktop\SWA\Softwarearchitektur\htwsaar-i-mst-vorlage
 INPUT c:\Users\Richard Mai\Desktop\SWA\Softwarearchitektur\htwsaar-i-mst-vorlage.out
 INPUT c:\Users\Richard Mai\Desktop\SWA\Softwarearchitektur\htwsaar-i-mst-vorlage.run.xml
 OUTPUT c:\Users\Richard Mai\Desktop\SWA\Softwarearchitektur\htwsaar-i-mst-vorlage.run.xml
-INPUT C:\Users\Richard Mai\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ectt1095.pk
-INPUT C:\Users\Richard Mai\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ectt1095.pk
 INPUT C:\Users\Richard Mai\AppData\Local\Programs\MiKTeX 2.9\fonts\enc\dvips\base\8r.enc
 INPUT C:\Users\Richard Mai\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\urw\palatino\uplb8a.pfb
 INPUT C:\Users\Richard Mai\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\urw\palatino\uplb8a.pfb

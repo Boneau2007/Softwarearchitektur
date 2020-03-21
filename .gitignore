@@ -15,3 +15,7 @@
 *-blx.bib
 *.run.xml
 clear.bat
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.tcp
