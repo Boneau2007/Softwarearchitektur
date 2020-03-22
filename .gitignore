@@ -16,6 +16,7 @@
 *.run.xml
 clear.bat
 *.fls
+*.pdf
 *.fdb_latexmk
-*.synctex.gz
+*.synctex
 *.tcp
