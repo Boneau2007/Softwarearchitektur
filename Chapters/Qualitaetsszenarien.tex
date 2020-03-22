@@ -9,13 +9,13 @@
   \label{fig:Qualitaet1}
 \end{figure}
 
-Verfuegbarkeits-Szenario
-Source of Stimulus: Heartbeat Monitor
-Stimulus: Sendet einen Heartbeat an den Server ohne Rückmeldung
-Environment: Laufzeit, Normalbetrieb
-Component: Gesamtsystem
-Response: Nachricht an Admin
-Response Measure: …
+Verfuegbarkeits-Szenario\\
+Source of Stimulus: Heartbeat Monitor\\
+Stimulus: Sendet einen Heartbeat an den Server ohne Rückmeldung\\
+Environment: Laufzeit, Normalbetrieb\\
+Component: Gesamtsystem\\
+Response: Nachricht an Admin\\
+Response Measure: Keine Ausfallzeit\\
 
 
 
@@ -28,13 +28,13 @@ Response Measure: …
 \end{figure}
 
 
-Sicherheits-Szenario
-Source of Stimulus: Benutzer
-Stimulus: Öffnet das Webfrontend über einen Browser über http
-Environment: Laufzeit, Normalbetrieb
-Component: Frontend
-Response: Weiterleitung auf https
-Response Measure: Innerhalb von einer 10tel Sekunde
+Sicherheits-Szenario\\
+Source of Stimulus: Benutzer\\
+Stimulus: Öffnet das Webfrontend über einen Browser über http\\
+Environment: Laufzeit, Normalbetrieb\\
+Component: Frontend\\
+Response: Weiterleitung auf https\\
+Response Measure: Daten sind verschlüsselt\\
 
 
 
@@ -49,12 +49,12 @@ Response Measure: Innerhalb von einer 10tel Sekunde
 
 
 Nutzbarkeits-Szenario
-Source of Stimulus: Benutzer
-Stimulus: Findet sich in der Weboberfläche auf Anhieb zurecht
-Environment: Laufzeit, Normalbetrieb
-Component: Frontend
-Response: Frühe Zusammenarbeit beim Design
-Response Measure: Abnahme nach Implementierung
+Source of Stimulus: Benutzer\\
+Stimulus: Öffnet das Webfrontend\\
+Environment: Laufzeit, Normalbetrieb\\
+Component: Frontend\\
+Response: Öffnet das Tutorial / Hilfe-Meldung\\
+Response Measure: Neue Nutzer haben einen guten Einstieg in der Software\\
 
 
 
@@ -63,37 +63,37 @@ Response Measure: Abnahme nach Implementierung
 \begin{figure}[tbh]
   \centering
   \includegraphics[width=0.7\textwidth]{Graphics/Erweiterbarkeit.png}
-  \caption{Effizienz-Szenario}
+  \caption{Erweiterbarkeits-Szenario}
   \label{fig:Qualitaet3}
 \end{figure}
 
 
-Erweiterbarkeits-Szenario
-Source of Stimulus: Benutzer
-Stimulus: Neue Funktionen werden zeitnah eingebaut
-Environment: Laufzeit, Normalbetrieb
-Component: Frontend, Backend
-Response: Implementierung ohne negativen Sideeffects
-Response Measure: Implementierung innerhalb einer Woche 
+Erweiterbarkeits-Szenario\\
+Source of Stimulus: Entwickler\\
+Stimulus: Erstellt / Plant neues Feature\\
+Environment: Laufzeit, Normalbetrieb\\
+Component: Gesamtsystem\\
+Response: Implementierung ohne negativen Sideeffects\\
+Response Measure: Implementierung innerhalb einer Woche \\
 
 
 
 \begin{figure}[tbh]
   \centering
   \includegraphics[width=0.7\textwidth]{Graphics/Portierbarkeit.png}
-  \caption{Effizienz-Szenario}
+  \caption{Portierbarkeit-Szenario}
   \label{fig:Qualitaet4}
 \end{figure}
 
 
 
-Portierbarkeits-Szenario
-Source of Stimulus: IT-Abteilung
-Stimulus: Ein Hardwarewechsel auf eine andere Plattform
-Environment: Laufzeit, Normalbetrieb
-Component: Frontend, Backend
-Response: Implementierung in hardwarenaher Sprache mit Compilern, die Programme für alle Systeme kompilieren 
-Response Measure: Compileroutput muss auf ARM-Cortex 7, Intel x86/x64 unter Linux und Windows funktionieren
+Portierbarkeits-Szenario\\
+Source of Stimulus: IT-Abteilung\\
+Stimulus: Möchte auf andere Hardware umsteigen\\
+Environment: Laufzeit, Normalbetrieb\\
+Component: Gesamtsystem\\
+Response: Systemupdates und Software installieren und Backups erstellen \\
+Response Measure: Fertig in 1 Woche\\
 
 
 
@@ -107,13 +107,13 @@ Response Measure: Compileroutput muss auf ARM-Cortex 7, Intel x86/x64 unter Linu
 
 
 
-Effizienz-Szenario
-Source of Stimulus: IT-AProtokollbteilung
-Stimulus: Mehrere Daten sammeln, Hardware soll mind. 500 Datenpunkten aus verschiedenen Stellen sammeln können
-Environment:Laufzeit, Normalbetrieb
-Component: Hardware, Software, Backend
-Response: Einführung von Hardware, bzw. gute Software um Datenpunkte zu sammeln
-Response Measure: 
+Effizienz-Szenario\\
+Source of Stimulus: Entwickler\\
+Stimulus: Mehrere Daten sammeln\\
+Environment:Laufzeit, Normalbetrieb\\
+Component: Hardware, Software, Backend\\
+Response: Einführung von Hardware, bzw. gute Software um Datenpunkte zu sammeln\\
+Response Measure: Schneller Einbau und verbesserte Datensammlung\\
 
 
 
@@ -121,17 +121,16 @@ Response Measure:
 \begin{figure}[tbh]
   \centering
   \includegraphics[width=0.7\textwidth]{Graphics/Hardware.png}
-  \caption{Effizienz-Szenario}
+  \caption{Hardware-Szenario}
   \label{fig:Qualitaet6}
 \end{figure}
 
 
-Hardware-Szenario
-Source of Stimulus: IT-Abteilung
-Stimulus: Passende Hardware für die Sprachumgebung
-Environment:Lautzeit, Normalbetrieb
-Component: Frontend, Backend
-Response:Für Frontend und Backend muss eine passende Hardware vorhanden sein
-Response Measure: Minimalanforderungen für Frontend: Lauffähig auf Raspberry Pi 1; Für Backend: mindestens 512 Mbyte Hauptspeicher, 4 Gbyte Sekundärspeicher und einem Prozessor mit 2 logischen Kernen
-
+Hardware-Szenario\\
+Source of Stimulus: IT-Abteilung\\
+Stimulus: Möchte neue Hardware integrieren\\
+Environment:Lautzeit, Normalbetrieb\\
+Component: Gesamtsystem\\
+Response: Systemupdates und Software installieren\\
+Response Measure: Fertig in kleinen Zeitraum\\
 
