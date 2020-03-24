@@ -2,10 +2,85 @@
 \label{ch:Anforderungsanalyse}
 \section{Funktionale Anforderungen}
 
-
-
-
-
+\begin{enumerate}
+    \item Datenbank
+    \begin{itemize}
+        \item Das System muss eine Datenbank besitzen um eingehende Datenströme aus verschiedenen Datenquellen abzuspeichern
+    \end{itemize}
+    \item Datenquellen
+    \begin{itemize}
+        \item Diese Datenquellen sind über verschiedene Interfaces zu erreichen. Dazu gehören die Protokolle HFI-MM, HFI-CM, Modbus TCP/RTU, CAN/CANopen, S7 protocol, OPC-UA (client and server), REST, WebSocket
+    \end{itemize}
+    \item Datenberechnung
+    \begin{itemize}
+        \item Die Datenberechnung dient dazu, Werte der Datenbank weiter zu verarbeiten und wieder in die Datenbank zurück zu schreiben. Sie soll die Möglichkeit bieten, neue Funktionen hinzuzufügen und die neu gewonnenen Daten wieder in die Datenbank zu schreiben. (e.g: Standzeitberechnung)
+    \end{itemize}
+    \item Filter
+    \begin{itemize}
+        \item Alle Daten, die entweder über die Datenberechnung oder direkt von der Datenquelle kommen, laufen zusätzlich über einen Filter, der die gelesenen Werte anhand von Konfigurationen filtert. (e.g.: mit einem epsilon-Filter)
+    \end{itemize}
+    \item Webfrontend
+    \begin{itemize}
+        \item Die Benutzeroberfläche mit der auf das System zugegriffen wird, ist durch ein Webfrontend zu realisieren. Anzuzeigende Daten müssen demnach über einen Browser erreichbar sein.
+    \end{itemize}    
+    \item Benutzerverwaltung
+    \begin{itemize}
+        \item Um einen autorisierten Zugriff auf die Benutzeroberfläche sicher zu stellen, benötigt das System eine Benutzerverwaltung mit verschiedenen Rechten. Dazu ist ein Rollenbasiertes Verwaltungssystem einzurichten, welches über die Rollen Administrator, Moderator und User verfügt. Des weiteren sollen individualisierbare Rollen  anhand von verschiedenen Rechten erstellbar sein. Diese Rechte sind fürs erste lesen, schreiben, ausführen, welche für jede System-/Webkomponente eine adäquate interpretation benötigen. 
+    \end{itemize}    
+    \item Dashboard-Editor
+    \begin{itemize}
+        \item Die  Weboberfläche soll die Möglichkeit besitzen Dashboards anzuzeigen und zu editieren. Die anzuzeigenden Elemente, sind dazu aus den Daten der Datenbank zu entnehmen.
+    \end{itemize}    
+    \item Datenexport
+    \begin{itemize}
+        \item Daten müssen in einem standardisierten Format exportiert werden.
+    \end{itemize}
+    \item Alarmmanagement
+    \begin{itemize}
+        \item Sollte ein Datenquelle einen Fehler melden, so soll das System eine eine einfache möglichkeit bieten, den Fehler zu orten und dies effizient weiterleiten
+    \end{itemize}
+\end{enumerate}
 
 \section{Nicht funktionale Anforderungen}
+
+\begin{enumerate}
+    \item Verfügbarkeit
+    \begin{itemize}
+        \item Die Software soll eine Hochverfügbarkeit von mindestens 99.9\% aufweisen. Demnach darf das System im Jahr lediglich 8h 45min (Dies betrifft die Komponente Datenpunkt-Server)
+    \end{itemize}
+    \item Zuverlässigkeit
+    \begin{itemize}
+        \item Bei einem kontinuierlichen Datenstrom ist der Verlust von Daten akzeptabel (in welchem Maß?). Jedoch müssen die gespeicherten Daten Korrekt und unverfälscht sein.
+        \item Bei einem Systemfehler soll das System sich automatisch neu starten können, mit den Werten, die Vor dem Absturz gespeichert wurden.
+    \end{itemize}
+    \item Nutzbarkeit
+    \begin{itemize}
+        \item Das Web-frontend der Software soll für einen Bediener ohne It-Fachkenntnisse innerhalb einer Stunde erlernbar sein. 
+    \end{itemize}
+    \item Sicherheit
+    \begin{itemize}
+        \item Das Web-frontend muss über einen sicheren Kanal erreicht werden, sodass dessen eingehende und ausgehende Datenschutz Bezogene Daten verschlüsselt und von dritten nicht erkennbar sind. 
+    \end{itemize}
+    \item Erweiterbarkeit
+    \begin{itemize}
+        \item Das System soll fähig sein, Legacy - Datensätze ohne einen Aufwand nach einem Systemupdate in der Datenbank weiter Verarbeiten zu können.
+        \item Das System muss es erlauben, zusätzliche Funktionen die Analysen auf Datensätzen ausführen können, einfach in die Umgebung zu integrieren.  
+    \end{itemize}
+    \item Portierbarkeit
+    \begin{itemize}
+        \item Das System soll auf unterschiedlichen Hardware-Plattformen unter verschiedenen Betriebssystemen lauffähig sein.
+        \\Hardware: ARM-Cortex 7, x86/x64
+          \\  BS: Linux, WIndows
+    \end{itemize}
+    \item Effizienz
+    \begin{itemize}
+        \item Die Software soll min. 500 Datenpunkte pro Sekunde aus verschiedenen Datenquellen erfassen können und in eine Datenbank speichern können 
+    \end{itemize}
+    \item Hardware
+    \begin{itemize}
+        \item Die Minimalanforderungen an das Backend sind mit mindestens 512 Mbyte Hauptspeicher, 4 Gbyte Sekundärspeicher und einem Prozessor mit 2 logischen Kernen zu betiteln.
+        \item Das Frontend muss auf mindestens den Hardwarebeschreibung eines Raspberry Pi 1 lauffähig sein. 
+    \end{itemize}
+\end{enumerate}
+
 %Einflussfaktoren/Randbedingungen
