@@ -12,40 +12,42 @@ Die fachliche Kontextabgrenzung dient uns dazu alle Kommunikationspartner zusamm
 
 Wie das Diagramm veranschaulicht, dient das Data+ als Datensenke für alle angezeigten Systeme. Jedes dieser Systeme kann über eine eigene Schnittstelle bzw. Protokoll verfügen und über jenes die protokollspezifischen Daten an das Data+ senden.
 Folgende Tabelle stellt noch einmal die Kommunikationspartner und den fachlichen Kontext zum System dar:
-
-\begin{table}[t]
+\pagebreak
+\begin{table}[h]
 	\begin{tabularx}{\textwidth}{|p{3cm}|X|X|}
 		\hline
 		Kommunikations-
 		partner & Eingabe & Ausgabe \\
 		\hline
-		HFI-MM-System & & \\
+		HFI-MM-System & Sensordaten & HFI-MM-Protokolldaten nach HFI-MM Standard\\
 		\hline
-		HFI-CM-System & & \\
+		HFI-CM-System & Sensordaten & HFI-CM-Protokolldaten nach HFI-CM Standard\\
 		\hline
-		TCP/RTU-System & & \\
+		TCP/RTU-System & Sensordaten & Protokolldaten nach TCP/RTU Standard \\
 		\hline
 		HTTP-
-		System & & \\
+		System & 4 verschiedene Arten von Daten(User, Group, Station, Datapoint) & Daten im JSON-Format \\
 		\hline
 		CAN/CANopen-
-		System & & \\
+		System & Sensordaten & CAN/CANopen-Protokolldaten nach Standard\\
 		\hline
-		S7-System & & \\
+		S7-System & Sensordaten & S7-Protokolldaten nach Standard\\
 		\hline
-		WebSocket-System & & \\
+		WebSocket-System & Streamdaten & Daten im ProtoBuf Format\\
 		\hline
 	\end{tabularx} 
 	\caption{Fachliche Kontextabgrenzung der Kommunikationspartner}
 	\label{tab:FachlicheKontextabgrenzungDerKommunikationspartner}
 \end{table}
 
+Alle einzelnen Kommunikationspartner haben selbst wiederum Eingangsdaten und geben alle Daten aus verschiedenen Protokollen dem SUD weiter. Dieses verarbeitet die eingehenden Daten und wertet diese aus.
+
 \section{Technischer Kontext}
 Der technische Kontext definiert die Kanäle und das Übertragungsmedium über dem unser System mit externen Komponenten interagiert. Dabei wird erklärt, wie und über welche technischen Kanäle unsere fachlichen Ein- und Ausgaben ablaufen. Zur Veranschaulichung wird dies im folgenden UML Deployment-Diagramm dargestellt:
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.6\textwidth]{Graphics/technische_kontextabgrenzung.png}
+	\includegraphics[width=0.4\textwidth]{Graphics/technische_kontextabgrenzung.png}
 	\caption{Technische Kontextabgrenzung}
 	\label{fig:technische_kontextabgrenzung}
 \end{figure}
