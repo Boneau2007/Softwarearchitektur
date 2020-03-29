@@ -13,14 +13,14 @@ Die Firma HYDAC Systems und Services GmbH entwickelt derzeit ein System zum erfa
 \section{Zielsetzung}
 Das Ziel dieses Dokuments ist es eine Softwarearchitektur eines Condtion Monitoring auszuarbeiten, welcher unter Anwendung moderner Architekturansätze zu gestalten ist. Die folgenden primären Qualitätsziele sind dabei zu erreichen:
 \begin{itemize}
-	\item Effizienz (Performance|Leistung): Das System soll ca. 500 Datensätze innerhalb einer Sekunde aus ein oder mehreren Datenquellen erfassen können.
+	\item Effizienz (Performance|Leistung): Das System soll ca. 500 Datensätze innerhalb einer Sekunde aus einer oder mehreren Datenquellen erfassen können.
  	\item Verfügbarkeit (Erreichbarkeit): Das System soll eine Hochverfügbarkeit von mindestens 99,9\% aufweisen und darf demnach maximal 8h 45min im Jahr ausfallen.
- 	\item Nutzbarkeit (UX): Das User-Interface soll einfach zu verstehen sein und einem Bediener innerhalb einer Stunde erlernbar sein. Des weiteren soll die Oberfläche für den Benutzer individuell anpassbar sein.
+ 	\item Nutzbarkeit (UX): Das User-Interface soll einfach zu verstehen sein und einem Bediener innerhalb einer Stunde erlernbar sein. Des Weiteren soll die Oberfläche für den Benutzer individuell anpassbar sein.
 \end{itemize}
 
 \section{Stakeholder}
 Die Stakeholder werden durch eine Stakeholderanalyse identifiziert und bezeichnen die für das Projekt relevanten Personengruppen. 
-Hierzu ist festzuhalten, welchen Vorteil die jeweiligen Gruppen haben und welche individuellen Erwartungen an das System gestellt werden. Durch eine Marktanalyse in Betrachtung des Einsatzumfelds und anhand der Einsatzmöglichkeiten haben sich uns folgende Personengruppen als Stakeholder an das System herausgestellt:
+Hierzu ist festzuhalten, welche Vorteile die jeweiligen Gruppen haben und welche individuellen Erwartungen an das System gestellt werden. Durch eine Marktanalyse in Betrachtung des Einsatzumfelds und anhand der Einsatzmöglichkeiten haben sich uns folgende Personengruppen als Stakeholder an das System herausgestellt:
 \begin{itemize}
 	\item Fach- und Führungskräfte
 	\item Anwendungs- und Testentwickler
@@ -28,8 +28,8 @@ Hierzu ist festzuhalten, welchen Vorteil die jeweiligen Gruppen haben und welche
 	\item Systemadministratoren
 \end{itemize}
 Die Fach- und Führungskräfte sind insbesondere an einer zielführenden Übersicht und einer Aggregation von planbaren Artefakten interessiert, welches ihnen wiederum bei der Unterstützung und Planung des Arbeitsprozesses hilft.   
-Die Anwendungs- und Testentwickler erwarten einen niedrigen Integrationsaufwand bei Implementierung neuer Funktionalitäten. 
+Die Anwendungs- und Testentwickler erwarten einen niedrigen Integrationsaufwand bei der Implementierung neuer Funktionalitäten. 
 Die Linien- und Produktionskräfte erwarten eine einfache Ansicht der Zustandserfassung, sodass sie das System einfach überwachen können.
-Die Systemadministratoren erwarten, dass das System eine sofortige Informationsmitteilung und eine einfache Maßnahmenkontrolle bereitstellt, damit einerseits die Systeme auf Fehler überwacht und reagiert werden können.
+Die Systemadministratoren erwarten, dass das System eine sofortige Informationsmitteilung und eine einfache Maßnahmenkontrolle bereitstellt, damit die Systeme auf Fehler überwacht und reagiert werden können.
 \section{Gliederung}
-Das erste Kapitel gibt einen Überblick über die Themen, welche folgend in der Dokumentation ausformuliert sind. Es schafft Klarheit darüber wer, warum und wozu solch ein System benötigt wird und definiert die zentralen Merkmale.  Im Kapitel \ref{ch:Einflussfaktoren}, wird dann auf Randbedingungen eingegangen, die nicht direkt in den Anforderungen beschreiben sind, welche aber trotzdem bei einer Entwicklung beachtet werden sollen. Das \ref{ch:Konzept} befasst sich danach mit den gestellten Anforderungen und beschreibt ein mögliches Konzept nach Kriterien. Kapitel Im letzten Kapitel \ref{ch:Fazit} werden wir das Vorgehen abschließend beurteilen und einen Ausblick wagen.
+Das erste Kapitel gibt einen Überblick über die Themen, welche folgend in der Dokumentation ausformuliert sind. Es schafft Klarheit darüber wer, warum und wozu solch ein System benötigt wird und definiert die zentralen Merkmale.  In Kapitel \ref{ch:Einflussfaktoren}, wird dann auf Randbedingungen eingegangen, die nicht direkt in den Anforderungen beschreiben sind, welche aber trotzdem bei einer Entwicklung beachtet werden sollen. Das \ref{ch:Konzept} befasst sich danach mit den gestellten Anforderungen und beschreibt ein mögliches Konzept nach Kriterien. Im letzten Kapitel \ref{ch:Fazit} werden wir das Vorgehen abschließend beurteilen und einen Ausblick wagen.
