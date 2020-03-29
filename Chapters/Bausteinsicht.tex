@@ -79,8 +79,7 @@ Die folgenden Abschnitte beschreiben die in der Abbildung dargestellten Einheite
 \end{table}
 
 \section{Ebene 2}
-Die Darstellung der Bausteine der zweiten Ebene zeigt die Hauptbausteine der einzelnen M
-odule.
+Die Darstellung der Bausteine der zweiten Ebene zeigt die Hauptbausteine der einzelnen Module.
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=1\textwidth]{Graphics/bausteinansicht_ebene_2_IO-Modul.png}
@@ -96,6 +95,26 @@ odule.
 		Readerkomponenten & Jede Readerkomponente ist für das einlesen einer bestimmten Protokollart zuständig. Der JSONReader unterteilt sich jeweils noch für die einzelnen Konfigurationsdaten sodass jede Dartenart gelesen werden kann. Jede dieser Daten werden in diese Komponenten deserialisiert. Jeder Reader leitet sein Ergebniss an die Datenbankverwaltung weiter. \\
 		\hline
 		Import Handler &  Nimmt über die Außenschnittstellen alle Daten im CSV- und binärformat auf und sendet diese an die Datenbankverwaltung\\
+		\hline
+	\end{tabularx} 
+	\caption{Beschreibung Bausteine IO-Handler}	\label{tab:IOHandlerBeschreibung}
+\end{table}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=1\textwidth]{Graphics/bausteinansicht_ebene_2_PrasentationManager.png}
+\caption{Bausteinsicht Level 2 Pr\"asentation Manager}
+\label{fig:bausteinsichtlvl2_modulIO}
+\end{figure}                 
+
+\begin{table}[th]
+	\begin{tabularx}{\textwidth}{|p{5cm}|X|}
+		\hline
+		Baustein & Beschreibung\\
+		\hline
+		Verwaltungskomponenten & Jede Verwaltungskomponente stellt ViewModel-Klassen mit Data Binding und zugehörigen Views zur Verfügung. Die den Views und ViewModels zugehörigen Models und Daten, sind die Relationen und Schemen aus der Konfigurationsdatenbank. \\
+		\hline
+		RestManager &  Der RestManager stellt das System nach außen hin dar. Er verwaltet GET, POST und DELETE anfragen für jeden Endpunkt. Die Endpunkte werden durch die Verwaltungskomonenten dargestellt. An diese übergibt der RestManager die Befehle bei entsprechenden HTTP-Reuquests.\\
 		\hline
 	\end{tabularx} 
 	\caption{Beschreibung Bausteine IO-Handler}	\label{tab:IOHandlerBeschreibung}
