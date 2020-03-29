@@ -79,8 +79,7 @@ Die folgenden Abschnitte beschreiben die in der Abbildung dargestellten Einheite
 \end{table}
 
 \section{Ebene 2}
-Die Darstellung der Bausteine der zweiten Ebene zeigt die Hauptbausteine der einzelnen M
-odule.
+Die Darstellung der Bausteine der zweiten Ebene zeigt die Hauptbausteine der einzelnen Module.
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=1\textwidth]{Graphics/bausteinansicht_ebene_2_IO-Modul.png}
@@ -102,12 +101,33 @@ odule.
 \end{table}
 
 \begin{figure}[h]
+\centering
+\includegraphics[width=1\textwidth]{Graphics/bausteinansicht_ebene_2_PrasentationManager.png}
+\caption{Bausteinsicht Level 2 Pr\"asentation Manager}
+\label{fig:bausteinsichtlvl2__PrasentationManager}
+\end{figure}                 
+
+\begin{table}[th]
+	\begin{tabularx}{\textwidth}{|p{5cm}|X|}
+		\hline
+		Baustein & Beschreibung\\
+		\hline
+		Verwaltungskomponenten & Jede Verwaltungskomponente stellt ViewModel-Klassen mit Data Binding und zugehörigen Views zur Verfügung. Die den Views und ViewModels zugehörigen Models und Daten, sind die Relationen und Schemen aus der Konfigurationsdatenbank. \\
+		\hline
+		RestManager &  Der RestManager stellt das System nach außen hin dar. Er verwaltet GET, POST und DELETE anfragen für jeden Endpunkt. Die Endpunkte werden durch die Verwaltungskomonenten dargestellt. An diese übergibt der RestManager die Befehle bei entsprechenden HTTP-Reuquests.\\
+		\hline
+	\end{tabularx} 
+	\caption{Beschreibung Baustein PrasentationManager}	\label{tab:Representation}
+\end{table}
+
+\begin{figure}
 	\centering
 	\includegraphics[width=1\textwidth]{Graphics/datenbankverwaltung.png}
 	\caption{Datenbankverwaltung}
 	\label{fig:datenbankverwaltung}
 \end{figure}
-	\begin{table}[th]
+
+\begin{table}[th]
 	\begin{tabularx}{\textwidth}{|p{5cm}| X|}
 		\hline
 		Baustein & Beschreibung\\
@@ -121,6 +141,6 @@ odule.
 		realtional & SQLite-Datenbank für User- und andere Daten\\
 		\hline
 	\end{tabularx} 
-	\caption{Fachliche Kontextabgrenzung der Kommunikationspartner}
-	\label{tab:FachlicheKontextabgrenzungDerKommunikationspartner}
+	\caption{Beschreibung Baustein Datenbankverwaltung}
+	\label{tab:Datenbankverwaltung}
 \end{table}
