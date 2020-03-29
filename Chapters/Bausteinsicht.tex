@@ -1,7 +1,7 @@
 \chapter{Bausteinsicht}
 In diesem Kapitel zeigen wir den Aufbau des Condition Monitoring Systems. Es werden dabei die grundlegenden Pakete, Programmstrukturen und Komponenten beschrieben.
 \section{Ebene 1}
-Die Bausteine der ersten Ebene sind die zu implementierenden Einheiten. Die verschiedenen Module enthalten unterschiedliche Architekturstile, wordurch unser Gesamtsystem eine heterogene Softwarearchitektur aufweist. Jedes Modul verantwortet einen Teil der Gesamtfunktionalität. Anhand dieser werden die folgenden Ebenen um weitere Einheiten erweitert. Die folgende Grafik gibt einen ersten Überblick über das System.
+Die Bausteine der ersten Ebene sind die zu implementierenden Einheiten. Die verschiedenen Module enthalten unterschiedliche Architekturstile, wodurch unser Gesamtsystem eine heterogene Softwarearchitektur aufweist. Jedes Modul verantwortet einen Teil der Gesamtfunktionalität. Anhand dieser werden die folgenden Ebenen um weitere Einheiten erweitert. Die folgende Grafik gibt einen ersten Überblick über das System.
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=1.0\textwidth]{Graphics/bausteinansicht_ebene_1.png}
@@ -19,7 +19,7 @@ Die folgenden Abschnitte beschreiben die in der Abbildung dargestellten Einheite
 		\hline
 		 Zweck/Verantwortlichkeit & Das Modul nimmt über Außenschnittstellen die Daten von Fremdsystemen entgegen. \\
 		 \hline
-		 Schnittstellen &  Eingang von Betriebsdaten(csv, json, binär). Nutzt Funktionen aus der Datenverwaltung \\
+		 Schnittstellen &  Eingang von Betriebsdaten (csv, json, binär). Nutzt Funktionen aus der Datenverwaltung \\
 		 \hline
 	\end{tabularx} 
 	\caption{IO-Handler}
@@ -56,7 +56,7 @@ Die folgenden Abschnitte beschreiben die in der Abbildung dargestellten Einheite
 \begin{table}[th]
 	\begin{tabularx}{\textwidth}{p{5cm} X}
 		\hline
-		Zweck/Verantwortlichkeit & Erstellt Backupdaten und liefert über die Aussenschnittstellen Berichtdaten \\
+		Zweck/Verantwortlichkeit & Erstellt Backupdaten und liefert über die Außenschnittstellen Berichtdaten \\
 		\hline
 		Schnittstellen & Nutzt die Funktionen der Datenverwaltung um Reports zu erstellen\\
 		\hline
@@ -71,7 +71,7 @@ Die folgenden Abschnitte beschreiben die in der Abbildung dargestellten Einheite
 		\hline
 		Zweck/Verantwortlichkeit & Liefert über Außenschnittstellen Übersichtsdaten \\
 		\hline
-		Schnittstellen & Übersichtsdaten(PDF, CSV, JSON) und nutzt dabei Methoden aus der Dateiverwaltung\\
+		Schnittstellen & Übersichtsdaten (PDF, CSV, JSON) und nutzt dabei Methoden aus der Dateiverwaltung\\
 		\hline
 	\end{tabularx} 
 	\caption{Export-Handler}
@@ -92,7 +92,7 @@ Die Darstellung der Bausteine der zweiten Ebene zeigt die Hauptbausteine der ein
 		\hline
 		Baustein & Beschreibung\\
 		\hline
-		Readerkomponenten & Jede Readerkomponente ist für das einlesen einer bestimmten Protokollart zuständig. Der JSONReader unterteilt sich jeweils noch für die einzelnen Konfigurationsdaten sodass jede Dartenart gelesen werden kann. Jede dieser Daten werden in diese Komponenten deserialisiert. Jeder Reader leitet sein Ergebniss an die Datenbankverwaltung weiter. \\
+		Readerkomponenten & Jede Readerkomponente ist für das einlesen einer bestimmten Protokollart zuständig. Der JSONReader unterteilt sich jeweils noch für die einzelnen Konfigurationsdaten sodass jede Datenart gelesen werden kann. Jede dieser Daten werden in diese Komponenten deserialisiert. Jeder Reader leitet sein Ergebnis an die Datenbankverwaltung weiter. \\
 		\hline
 		Import Handler &  Nimmt über die Außenschnittstellen alle Daten im CSV- und binärformat auf und sendet diese an die Datenbankverwaltung\\
 		\hline
@@ -114,7 +114,7 @@ Die Darstellung der Bausteine der zweiten Ebene zeigt die Hauptbausteine der ein
 		\hline
 		Verwaltungskomponenten & Jede Verwaltungskomponente stellt ViewModel-Klassen mit Data Binding und zugehörigen Views zur Verfügung. Die den Views und ViewModels zugehörigen Models und Daten, sind die Relationen und Schemen aus der Konfigurationsdatenbank. \\
 		\hline
-		RestManager &  Der RestManager stellt das System nach außen hin dar. Er verwaltet GET, POST und DELETE anfragen für jeden Endpunkt. Die Endpunkte werden durch die Verwaltungskomonenten dargestellt. An diese übergibt der RestManager die Befehle bei entsprechenden HTTP-Reuquests.\\
+		RestManager &  Der RestManager stellt das System nach außen hin dar. Er verwaltet GET, POST und DELETE anfragen für jeden Endpunkt. Die Endpunkte werden durch die Verwaltungskomponenten dargestellt. An diese übergibt der RestManager die Befehle bei entsprechenden HTTP-Requests.\\
 		\hline
 	\end{tabularx} 
 	\caption{Beschreibung Baustein PrasentationManager}	\label{tab:Representation}

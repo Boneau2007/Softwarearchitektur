@@ -2,12 +2,12 @@
 \label{ch:Lösungsstrategie}
 In diesem Kapitel werden nun die grundlegenden Entscheidungen und Lösungsansätze unseres Entwurfs vorgestellt. In den folgenden Technologieentscheidungen werden die Entscheidungen der Architektur festgelegt.  
 \begin{itemize}
-	\item Entkopplung der Datenbanken zur Fachdomäne mittels Schnittstellenklassen und der Nutzung von zwei separaten Datenbanken(Qualitätsziel: Performance)
+	\item Entkopplung der Datenbanken zur Fachdomäne mittels Schnittstellenklassen und der Nutzung von zwei separaten Datenbanken (Qualitätsziel: Performance)
 	\item Verringerung der Flexibilität, durch Verzicht auf Abstraktionsschichten (Qualitätsziel: Performance)
 	\item Zyklische redundante Speicherung ausgewählter Daten und Bereitstellung von Hardware-Backupsystemen (Qualitätsziel: Verfügbarkeit)
 	\item Einsatz hardwarenaher Programmiersprachen C und C++ (Qualitätsziel: Performance)
 	\item Keine Verteilung des Systems(Qualitätsziel: Performance)
-	\item Fehlererkennung durch kontinuierliches Versenden von Heartbeat(Qualitätsziel: Verfügbarkeit)
+	\item Fehlererkennung durch kontinuierliches Versenden von Heartbeat (Qualitätsziel: Verfügbarkeit)
 	\item Systemzustand wird periodisch gespeichert um im Fehlerfall zurücksetzen zu können (Qualitätsziel: Verfügbarkeit) 
 	\item Benutzerschnittstelle soll Datenobjekte durch Masken erzeugen und manipulieren können (Qualitätsziel: Nutzbarkeit) 
 	\item Die Benutzerschnittstelle läuft auf der Zielplattform in einem Web-Client und wird über den nginx-Webserver verwaltet (Qualitätsziel: Nutzbarkeit)
