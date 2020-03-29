@@ -6,6 +6,7 @@
     \item Datenbank
     \begin{itemize}
         \item Das System muss eine Datenbank besitzen um eingehende Datenströme aus verschiedenen Datenquellen abzuspeichern
+        \item Das System besitzt eine Konfigurations-Datenbank, in der steht, wie die Daten aussehen müssen
     \end{itemize}
     \item Datenquellen
     \begin{itemize}
@@ -22,6 +23,7 @@
     \item Webfrontend
     \begin{itemize}
         \item Die Benutzeroberfläche mit der auf das System zugegriffen wird, ist durch ein Webfrontend zu realisieren. Anzuzeigende Daten müssen demnach über einen Browser erreichbar sein.
+        \item Es wird über MVVM gearbeitet
     \end{itemize}    
     \item Benutzerverwaltung
     \begin{itemize}
@@ -60,6 +62,7 @@
     \item Sicherheit
     \begin{itemize}
         \item Das Web-frontend muss über einen sicheren Kanal erreicht werden, sodass dessen eingehende und ausgehende Datenschutz Bezogene Daten verschlüsselt und von dritten nicht erkennbar sind. 
+        \item Ein Backup-Datenbank ist enthalten, falls bei der Hauptdatenbank Fehler auftreten sollte.
     \end{itemize}
     \item Erweiterbarkeit
     \begin{itemize}
@@ -75,6 +78,7 @@
     \item Effizienz
     \begin{itemize}
         \item Die Software soll min. 500 Datenpunkte pro Sekunde aus verschiedenen Datenquellen erfassen können und in eine Datenbank speichern können 
+        \item Es werden Micro-Services genutzt
     \end{itemize}
     \item Hardware
     \begin{itemize}
