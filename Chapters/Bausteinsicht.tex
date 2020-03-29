@@ -1,101 +1,81 @@
 \chapter{Bausteinsicht}
 In diesem Kapitel zeigen wir den Aufbau des Condition Monitoring Systems. Es werden dabei die grundlegenden Pakete, Programmstrukturen und Komponenten beschrieben.
 \section{Ebene 1}
-Die Bausteine der ersten Ebene sind die zu implementierenden Einheiten. Die verschiedenen Module enthalten unterschiedliche Architekturstile, wordurch unser Gesamtsystem eine heterogene Softwarearchitektur aufweist. Jedes Modul verantwortet einen Teil der Gesamtfunktionalität. Anhand dieser werden die folgenden Ebenen um weitere Einheiten erweitert. Die folgende Grafik gibt einen ersten Überblick über das System.
+Die Bausteine der ersten Ebene sind zu implementierende Einheiten. Dazu gehören die Daten IO-Module, die Controller-Module und das Applikation-Presenter-Modul. 
+Die verschiedenen Module enthalten unterschiedliche Architekturstile, wodurch unser Gesamtsystem eine heterogene Softwarearchitektur aufweist. Jedes Modul verantwortet einen Teil der Gesamtfunktionalität. Anhand dieser werden die folgenden Ebenen um weitere Einheiten erweitert. Die folgende Grafik gibt einen ersten Überblick über das System.
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=1.0\textwidth]{Graphics/bausteinansicht_ebene_1.png}
 	\caption{Bausteinsicht Level 1}
 	\label{fig:bausteinsichtlvl1}
 \end{figure}
-Die Module IO-Handler und Datenverwaltung sind hauptverantwortlich für das Architekturziel hohe Performance.
-Das Architekturziel der Verfügbarkeit wird von den Komponenten Reporting und ExportHandler gewährleistet. 
-Das PräsentationManager-Modul verantwortet, dass das Architekturziel der Benutzerfreundlichkeit eingehalten wird.
-Die folgenden Abschnitte beschreiben die in der Abbildung dargestellten Einheiten ausführlicher.
-\clearpage
-\subsection{IO-Handler}
-\begin{table}[th]
-	\begin{tabularx}{\textwidth}{p{5cm} X}
+
+Das Architekturziel hohe Performance zu gewährleisten, wird von der Komponente IO-Modul verantwortet.
+Das Controller-Modul, stellt sicher, dass das Architekturziel der Verfügbarkeit eingehalten wird. 
+Das Applikation-Präsenter-Modul verantwortet, dass das Architekturziel der Benutzerfreundlichkeit eingehalten wird.
+Die folgenden Abschnitte beschreiben die in der Abbildung dargestellten Einheiten von links nach rechts.  
+\subsection{IO-Module}
+\begin{table}
+	\begin{tabularx}{\textwidth}{X X}
 		\hline
-		 Zweck/Verantwortlichkeit & Das Modul nimmt über Außenschnittstellen die Daten von Fremdsystemen entgegen. \\
+		 Zweck/Verantwortlichkeit & Das Modul nimmt über Außenschnittstellen Daten von Fremdsystemen entgegen und ist für deren korrekte persistente Speicherung verantwortlich  \\
 		 \hline
-		 Schnittstellen &  Eingang von Betriebsdaten(csv, json, binär). Nutzt Funktionen aus der Datenverwaltung \\
+		 Schnittstellen intern & Speichert Konfigurationsdaten und Rohdaten in Datenbank \\
+		 \hline
+		 Schnittstellen extern & Eingang von Rohdaten(csv, json, binär) und Konfigurationsdaten (Datenpunkt, Station, Benutzer, Gruppe, Rollen, Regeln) \\
 		 \hline
 	\end{tabularx} 
-	\caption{IO-Handler}
-	\label{tab:IO-Handler}
+	\caption{Fachliche Kontextabgrenzung der Kommunikationspartner}
+	\label{tab:FachlicheKontextabgrenzungDerKommunikationspartner}
 \end{table}
 
-\subsection{Präsentation Manager}
+\subsection{Controller-Module}
 \begin{table}[th]
 	\begin{tabularx}{\textwidth}{X X}
 		\hline
-		Zweck/Verantwortlichkeit & Anzeigeoberflächenverwaltung für Benutzer \\
+		Zweck/Verantwortlichkeit & Verwaltet sämtliche Daten und beinhaltet Funktionsblöcke die Verwaltungsoperationen Lesen, Schreiben und Löschen bereitstellen. \\
 		\hline
-		Schnittstellen & Nutzt Daten und Funktionen aus der Datenverwaltung\\
+		Schnittstellen intern & Liefert \\
 		\hline
 	\end{tabularx} 
-	\caption{Präsentation Manager}
-	\label{tab:Präsentation Manager}
+	\caption{Fachliche Kontextabgrenzung der Kommunikationspartner}
+	\label{tab:FachlicheKontextabgrenzungDerKommunikationspartner}
 \end{table}
 
-\subsection{Datenverwaltung}
+\subsection{Applikation-Präsenter-Modul}
 \begin{table}[th]
 	\begin{tabularx}{\textwidth}{X X}
 		\hline
-		Zweck/Verantwortlichkeit & Verwaltet sämtliche Daten und beinhaltet Funktionsblöcke die Verwaltungsoperation Lesen, Schreiben und Löschen für die Daten Datenpunkt, Station, Benutzer, Gruppe, Rollen, Report und Regeln bereitstellen. \\
+		Zweck/Verantwortlichkeit & Anzeigeoberfläche für Benutzer \\
 		\hline
-		Schnittstellen & Erhält Daten von dem IO-Handler und stellt diese durch Funktionen im Präsentation Manager bereit\\
+		Schnittstellen intern & Nutzt den Webserver des Controller-Moduls\\
 		\hline
 	\end{tabularx} 
-	\caption{Datenverwaltung}
-	\label{Datenverwaltung}
+	\caption{Fachliche Kontextabgrenzung der Kommunikationspartner}
+	\label{tab:FachlicheKontextabgrenzungDerKommunikationspartner}
 \end{table}
+%Damit die die vielen Fremdsysteme und Maschinen mit unserer Software kommunizieren können, benötigen wir Implementierungen aller Protokolle in C++. Für CAN bzw. CANopen hat Alex eine Bibliothek in seiner Bachelorarbeit geschrieben. Für TCP/RTU nutzen wir Qt, für S7 gibt es Snap7. Die Hydac hat ihre eigene API und Bibliothek für die eigenen HFI-MM und HFI-CM Protokolle. Zu guter Letzt serialisieren wir WebSocket und HTTP mit Capn Proto. Alle Bibliotheken ermöglichen das einfache Abspeichern in den Wide-Column-Store oder bereiten es zumindest vor. Dafür werden eine DatenpunktID und StationsID der Maschine mit dem Wert und dem Zeitstempel gespeichert. Da diese Daten komplett ungeprüft in die Datenbank einfließen, muss ein weiterer Baustein alle Einträge überprüfen und Messfehler oder kritische Werte direkt in der Weboberfläche anzeigen. Dass die Überprüfung eventuell etwas langsamer als der Datenstrom in die Datenbank sein kann, ist an sich nicht schlimm, da die Anwendung in Produktionspausen aufholen und die noch ungeprüften Daten währenddessen verarbeitet.In der relationalen Datenbank befinden sich dann die DatenpunktIDs mit ihren Typen und Formaten, damit man ein Schema zur Darstellung im Interface hat. zusätzlich zu den Nutzer- und Rechtedaten gibt es auch noch eine Tabelle, die Regeln für die Datenpunkte abbildet.\\
 \clearpage
-\subsection{Reporting}
-\begin{table}[th]
-	\begin{tabularx}{\textwidth}{p{5cm} X}
-		\hline
-		Zweck/Verantwortlichkeit & Erstellt Backupdaten und liefert über die Aussenschnittstellen Berichtdaten \\
-		\hline
-		Schnittstellen & Nutzt die Funktionen der Datenverwaltung um Reports zu erstellen\\
-		\hline
-	\end{tabularx} 
-	\caption{Reporting}
-	\label{tab:Reporting}
-\end{table}
-
-\subsection{Export-Handler}
-\begin{table}[th]
-	\begin{tabularx}{\textwidth}{p{5cm} X}
-		\hline
-		Zweck/Verantwortlichkeit & Liefert über Außenschnittstellen Übersichtsdaten \\
-		\hline
-		Schnittstellen & Übersichtsdaten(PDF, CSV, JSON) und nutzt dabei Methoden aus der Dateiverwaltung\\
-		\hline
-	\end{tabularx} 
-	\caption{Export-Handler}
-	\label{tab:ExportHandler}
-\end{table}
-
 \section{Ebene 2}
-Die Darstellung der Bausteine der zweiten Ebene zeigt die Hauptbausteine der einzelnen Module.
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=1\textwidth]{Graphics/bausteinansicht_ebene_2_IO-Modul.png}
-	\caption{Bausteinsicht Level 2 IO-Handler}
-	\label{fig:bausteinsichtlvl2_modulIO}
-\end{figure}                 
-
-\begin{table}[t]
-	\begin{tabularx}{\textwidth}{|p{5cm}| X|}
+	\includegraphics[width=1\textwidth]{Graphics/bausteinansicht_ebene_2.png}
+	\caption{Bausteinsicht Level 2}
+	\label{fig:bausteinsichtlvl2}
+\end{figure}
+Das Webinterface hat zu beiden Datenbanken eine Verbindung und kann auch die API des Filtermoduls mitbenutzen. In der Nutzeroberfläche wird zwischen einem administrativem und einem anwendungsspezifischen Teil unterschieden. In letzterem werden nur Daten und Statistiken aufbereitet angezeigt, während die Rechtevergabe und Feineinstellung in der Administratoroberfläche stattfindet. 
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1\textwidth]{Graphics/datenbankverwaltung.png}
+	\caption{Datenbankverwaltung}
+	\label{fig:datenbankverwaltung}
+\end{figure}
+\begin{table}[th]
+	\begin{tabularx}{\textwidth}{X X}
 		\hline
-		Baustein & Beschreibung\\
+		RequestHandler & Verarbeitet alle Anfragen und entscheidet, welche Anfrage zu welcher Datenbank weitergeleitet werden muss \\
 		\hline
-		Readerkomponenten & Jede Readerkomponente ist für das einlesen einer bestimmten Protokollart zuständig. Der JSONReader unterteilt sich jeweils noch für die einzelnen Konfigurationsdaten sodass jede Dartenart gelesen werden kann. Jede dieser Daten werden in diese Komponenten deserialisiert. Jeder Reader leitet sein Ergebniss an die Datenbankverwaltung weiter. \\
-		\hline
-		Import Handler &  Nimmt über die Außenschnittstellen alle Daten im CSV- und binärformat auf und sendet diese an die Datenbankverwaltung\\
+		Filtermodul & Überprüft eigenständig alle Daten in der NoSQL Datenbank auf Korrektheit und bei Auffälligkeiten werden diese in die relationale Datenbank abgelegt\\
 		\hline
 	\end{tabularx} 
-	\caption{Beschreibung Bausteine IO-Handler}	\label{tab:IOHandlerBeschreibung}
-\end{table}
+	\caption{Funktionen der Datenbankverwaltung}
