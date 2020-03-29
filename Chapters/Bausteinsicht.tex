@@ -79,7 +79,8 @@ Die folgenden Abschnitte beschreiben die in der Abbildung dargestellten Einheite
 \end{table}
 
 \section{Ebene 2}
-Die Darstellung der Bausteine der zweiten Ebene zeigt die Hauptbausteine der einzelnen Module.
+Die Darstellung der Bausteine der zweiten Ebene zeigt die Hauptbausteine der einzelnen M
+odule.
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=1\textwidth]{Graphics/bausteinansicht_ebene_2_IO-Modul.png}
@@ -98,4 +99,28 @@ Die Darstellung der Bausteine der zweiten Ebene zeigt die Hauptbausteine der ein
 		\hline
 	\end{tabularx} 
 	\caption{Beschreibung Bausteine IO-Handler}	\label{tab:IOHandlerBeschreibung}
+\end{table}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1\textwidth]{Graphics/datenbankverwaltung.png}
+	\caption{Datenbankverwaltung}
+	\label{fig:datenbankverwaltung}
+\end{figure}
+	\begin{table}[th]
+	\begin{tabularx}{\textwidth}{|p{5cm}| X|}
+		\hline
+		Baustein & Beschreibung\\
+		\hline
+		RequestHandler & Verarbeitet alle Anfragen und entscheidet, welche Anfrage zu welcher Datenbank weitergeleitet werden muss. Die Ergebnisse der Datenbanken werden wiederum an den Empfänger zurückgesendet. \\
+		\hline
+		Filtermodul & Überprüft eigenständig alle Daten in der NoSQL Datenbank auf Korrektheit und bei Auffälligkeiten werden diese in die relationale Datenbank abgelegt oder direkt gelöscht.\\
+		\hline
+		NoSQL & Hypertable-Datenbank für Maschinen- und Sensordaten\\
+		\hline
+		realtional & SQLite-Datenbank für User- und andere Daten\\
+		\hline
+	\end{tabularx} 
+	\caption{Fachliche Kontextabgrenzung der Kommunikationspartner}
+	\label{tab:FachlicheKontextabgrenzungDerKommunikationspartner}
 \end{table}
